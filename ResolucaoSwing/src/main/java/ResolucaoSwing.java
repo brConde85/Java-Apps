@@ -4,6 +4,7 @@ import java.awt.Toolkit;
 import static java.lang.Math.sqrt;
 import java.text.DecimalFormat;
 
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -133,14 +134,14 @@ public class ResolucaoSwing extends javax.swing.JFrame {
     private void btnClikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClikActionPerformed
         // TODO add your handling code here:
         Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
-        DecimalFormat format = new DecimalFormat("0.00");
+        DecimalFormat formato = new DecimalFormat("0.00");
         
         double diag = sqrt((size.getWidth()*size.getWidth()) + 
                 (size.getHeight()*size.getHeight()));        
         
-        lblWidth.setText(format.format(size.getWidth())+" px");
-        lblHeigth.setText(format.format(size.getHeight())+" px");
-        lblDiag.setText(format.format(diag)+ " px");
+        lblWidth.setText(formato.format(size.getWidth())+" px");
+        lblHeigth.setText(formato.format(size.getHeight())+" px");
+        lblDiag.setText(formato.format(diag)+ " px");
     }//GEN-LAST:event_btnClikActionPerformed
 
     /**
