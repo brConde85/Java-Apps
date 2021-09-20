@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="573.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="olamundojavafxnew.FXMLDocumentController">
+   <children>
+      <Button fx:id="btnClick" layoutX="227.0" layoutY="110.0" mnemonicParsing="false" onAction="#clickInButton" prefHeight="39.0" prefWidth="119.0" text="Click me" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" />
+      <Label fx:id="lblText" layoutX="14.0" layoutY="14.0" text="The new text will be shown here..." textAlignment="CENTER" textFill="#ee0909">
+         <font>
+            <Font size="35.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <AreaChart layoutX="37.0" layoutY="147.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+   </children>
+</AnchorPane>
